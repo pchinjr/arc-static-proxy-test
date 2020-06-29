@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: Exported by architect/package@1.3.7 on 2020-06-29T17:36:08.366Z
+Description: Exported by architect/package@1.3.7 on 2020-06-29T18:00:57.971Z
 Resources:
   ArcStaticProxyTest:
     Type: AWS::Serverless::Api
@@ -98,7 +98,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://arc-static-proxy-test-cfn-deployments-94fd4/0418e49008774bfc164e5ca53aa71557
+      CodeUri: s3://arc-static-proxy-test-cfn-deployments-94fd4/e3dc2d3114682d997e94af0f3b12f72f
       Runtime: nodejs12.x
       MemorySize: 1152
       Timeout: 5
@@ -114,7 +114,6 @@ Resources:
           SESSION_TABLE_NAME: jwe
           ARC_STATIC_BUCKET:
             Ref: StaticBucket
-          ARC_STATIC_SPA: false
       Role:
         Fn::Sub:
         - arn:aws:iam::${AWS::AccountId}:role/${roleName}

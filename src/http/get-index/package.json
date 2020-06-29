@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "@architect/functions": "^3.12.1"
+    "@architect/functions": "^3.12.1",
+    "@architect/proxy-plugin-css-urls": "^1.0.1",
+    "@architect/proxy-plugin-html-urls": "^1.0.3"
   }
 }
